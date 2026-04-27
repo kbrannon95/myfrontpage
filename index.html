@@ -7,16 +7,16 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg: #0c0f14;
-  --surface: #151921;
-  --surface-hover: #1c2230;
-  --border: #252d3a;
-  --text: #e4e8ef;
-  --text-muted: #8892a4;
-  --accent: #4f8fea;
-  --accent-glow: rgba(79,143,234,0.15);
-  --accent2: #34d399;
-  --accent3: #f59e0b;
+  --bg: #f8f9fa;
+  --surface: #ffffff;
+  --surface-hover: #f0f2f5;
+  --border: #e2e5ea;
+  --text: #1a1a2e;
+  --text-muted: #5a6070;
+  --accent: #0d7377;
+  --accent-glow: rgba(13,115,119,0.08);
+  --accent2: #0d7377;
+  --accent3: #d4a017;
   --radius: 12px;
 }
 
@@ -36,8 +36,8 @@ body::before {
   position: fixed;
   inset: 0;
   background-image: 
-    linear-gradient(rgba(79,143,234,0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(79,143,234,0.03) 1px, transparent 1px);
+    linear-gradient(rgba(13,115,119,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(13,115,119,0.04) 1px, transparent 1px);
   background-size: 60px 60px;
   pointer-events: none;
   z-index: 0;
@@ -129,9 +129,9 @@ body::before {
 }
 
 .btn-primary:hover {
-  background: #3a7ad4;
+  background: #0a5c5f;
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(79,143,234,0.25);
+  box-shadow: 0 8px 24px rgba(13,115,119,0.2);
 }
 
 .btn-outline {
@@ -184,6 +184,7 @@ body::before {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
 .skill-chip {
@@ -263,6 +264,7 @@ body::before {
   flex-direction: column;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
 .project-card::before {
@@ -272,7 +274,7 @@ body::before {
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  background: linear-gradient(90deg, var(--accent), #2aa5a8);
   opacity: 0;
   transition: opacity 0.3s;
 }
@@ -280,7 +282,7 @@ body::before {
 .project-card:hover {
   border-color: var(--accent);
   transform: translateY(-3px);
-  box-shadow: 0 12px 32px rgba(0,0,0,0.3);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.08);
 }
 
 .project-card:hover::before {
